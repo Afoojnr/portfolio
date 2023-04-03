@@ -1,8 +1,17 @@
 import React from 'react'
-
+import { About, Testimonials, Work, Header, Footer, Skills } from './containers'
+import { Navbar } from './components'
 const App = () => {
   return (
-    <div>App</div>
+    <div className='app'>
+      <Navbar/>
+      <Header />
+      <About />
+      <Work />
+      <Skills />
+      <Testimonials />
+      <Footer/>
+    </div>
   )
 }
 
