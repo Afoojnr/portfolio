@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import {images} from '../../constants'
 
@@ -6,11 +6,11 @@ import "./About.scss";
 const abouts = [
   {
     title: "web Development",
-    description: "i am a good web developer",
+    description: "i am a frontend developer with a passion for building beautiful and functional websites",
     imgUrl: images.about01,
   },
   {
-    title: "web Design",
+    title: "FrontEnd Dev",
     description: "i am a good web developer",
     imgUrl: images.about02,
   },
@@ -29,7 +29,7 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I know that <span>Good Design</span> <br /> means{" "}
+        I know that <span>Good Apps</span> <br /> means{" "}
         <span>Good Business</span>
       </h2>
       <div className="app__profiles">
