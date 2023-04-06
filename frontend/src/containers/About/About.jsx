@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {images} from '../../constants'
-
+import { images } from "../../constants";
+import { AppWrap } from "../../wrapper";
 import "./About.scss";
 const abouts = [
   {
     title: "web Development",
-    description: "i am a frontend developer with a passion for building beautiful and functional websites",
+    description:
+      "i am a frontend developer with a passion for building beautiful and functional websites",
     imgUrl: images.about01,
   },
   {
@@ -42,8 +43,12 @@ const About = () => {
             key={about.title + index}
           >
             <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="p-text" style={{ marginTop: 10 }}>{ about.description}</p>
+            <h2 className="bold-text" style={{ marginTop: 20 }}>
+              {about.title}
+            </h2>
+            <p className="p-text" style={{ marginTop: 10 }}>
+              {about.description}
+            </p>
           </motion.div>
         ))}
       </div>
@@ -51,4 +56,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, "about");
