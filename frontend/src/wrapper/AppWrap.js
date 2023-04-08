@@ -14,6 +14,7 @@ const AppWrap = (Component, idName, classNames) =>
           </div>
         </div>
         <NavigationDots active={idName} />
+      
       </div>
     );
   };
