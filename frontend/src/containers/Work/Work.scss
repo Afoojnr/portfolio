@@ -1,4 +1,8 @@
-
+.app__work{
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
 .app__work-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -7,6 +11,7 @@
 
   .app__work-item {
     width: 270px;
+    // height: 290px;
     flex-direction: column;
 
     margin: 2rem;
@@ -23,7 +28,7 @@
     }
 
     @media screen and (min-width: 2000px) {
-      width: 470px;
+      width: 370px;
       padding: 1.25rem;
       border-radius: 0.75rem;
     }

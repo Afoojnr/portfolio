@@ -6,7 +6,7 @@ import { Tooltip as ReactTooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import { images } from "../../constants";
 
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Skills.scss";
 
 const skills = [
@@ -140,7 +140,11 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills,'skills');
+export default AppWrap(
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
+);
 
 // import React, { useState, useEffect } from 'react';
 // import { motion } from 'framer-motion';
